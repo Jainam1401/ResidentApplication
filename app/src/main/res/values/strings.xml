@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Resident Application</string>
+    <string name="Heading">Enter Your Aadhar Number</string>
+    <string name="RegisterButton">Send OTP</string>
+    <string name="OTPHeading">OTP</string>
+    <string name="verify_otp">Verify OTP</string>
+</resources>
