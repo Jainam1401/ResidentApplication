@@ -26,7 +26,7 @@ import org.json.JSONObject;
 public class MainActivity extends AppCompatActivity {
 
     public static final String MSG="com.residentapplication.msg";
-    public static String EncodedAadhaar="";
+    //public static String EncodedAadhaar="";
     int flag=0;
     String aadhar="";
     String username="";
@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
             t.setVisibility(View.VISIBLE);
             Button button=findViewById(R.id.button2);
             button.setVisibility(View.VISIBLE);
+            aadhar=aadhar.substring(8,12);
         }
         else
         {
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, " Vaild OTP ", Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent(this,MainPage.class);
                 String message=" Welcome "+username;
-                intent.putExtra(MSG,message);
+                intent.putExtra(MSG,aadhar);
                 //intent.putExtra(EncodedAadhaar,aadhar);
                 startActivity(intent);
 

@@ -28,8 +28,7 @@ public class MainPage extends AppCompatActivity {
         Intent intent=getIntent();
         String message=intent.getStringExtra(MainActivity.MSG);
         TextView textView=findViewById(R.id.textView3);
-        textView.setText(""+message);
-        String str="123123123123";
+        String str=textView.getText().toString();
 
         qrCodeIV=findViewById(R.id.imageView);
         WindowManager manager = (WindowManager) getSystemService(WINDOW_SERVICE);
@@ -58,7 +57,7 @@ public class MainPage extends AppCompatActivity {
             qrCodeIV.setImageBitmap(bitmap);
         } catch (WriterException e) {
 
-            //Log.e("Tag", e.toString());
+
         }
 
     }
