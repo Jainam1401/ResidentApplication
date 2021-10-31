@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             t.setVisibility(View.VISIBLE);
             Button button=findViewById(R.id.button2);
             button.setVisibility(View.VISIBLE);
-            aadhar=aadhar.substring(8,12);
+            //aadhar=aadhar.substring(8,12);
         }
         else
         {
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 Toast.makeText(this, " Vaild OTP ", Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent(this,MainPage.class);
-                String message=" Welcome "+username;
+                //String message=" Welcome "+username;
                 intent.putExtra(MSG,aadhar);
                 //intent.putExtra(EncodedAadhaar,aadhar);
                 startActivity(intent);

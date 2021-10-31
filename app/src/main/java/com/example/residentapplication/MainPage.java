@@ -27,16 +27,12 @@ public class MainPage extends AppCompatActivity {
 
         Intent intent=getIntent();
         String message=intent.getStringExtra(MainActivity.MSG);
-        TextView textView=findViewById(R.id.textView3);
-        String str=textView.getText().toString();
-
+        //TextView textView=findViewById(R.id.textView3);
+        String str=message;
+        //String str="123412341234";
         qrCodeIV=findViewById(R.id.imageView);
         WindowManager manager = (WindowManager) getSystemService(WINDOW_SERVICE);
-
-
         Display display = manager.getDefaultDisplay();
-
-
         Point point = new Point();
         display.getSize(point);
 
