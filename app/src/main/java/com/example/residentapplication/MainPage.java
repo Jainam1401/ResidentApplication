@@ -56,8 +56,7 @@ public class MainPage extends AppCompatActivity {
             bitmap = qrgEncoder.encodeAsBitmap();
             qrCodeIV.setImageBitmap(bitmap);
         } catch (WriterException e) {
-
-
+            
         }
 
     }
